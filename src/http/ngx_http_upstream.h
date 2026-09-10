@@ -392,6 +392,8 @@ struct ngx_http_upstream_s {
 
     ngx_msec_t                       start_time;
 
+    ngx_event_t                       retry_event;
+
     ngx_http_upstream_state_t       *state;
 
     ngx_str_t                        method;
